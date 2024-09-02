@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -16,7 +17,20 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <p id="currentDate"></p>
     </header>
+    <script>
+        // Get the current date
+        const date = new Date();
+        // Format the date as needed (e.g., Month Day, Year)
+        const formattedDate = date.toLocaleDateString('en-US', {
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric'
+        });
+        document.getElementById('currentDate').textContent = formattedDate;
+    </script>
     <section id="about">
         <h2>About Me</h2>
         <p>Write a brief introduction about yourself.</p>
