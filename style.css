@@ -11,7 +11,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    display: flex;
+    display:flex;
 }
 
 nav ul {
@@ -38,6 +38,6 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: #1a1e24;
     color: #fff;
 }
