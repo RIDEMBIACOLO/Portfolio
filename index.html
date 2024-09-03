@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
@@ -23,6 +27,7 @@
         // Get the current date
         const date = new Date();
         // Format the date as needed (e.g., Month Day, Year)
+    
         const formattedDate = date.toLocaleDateString('en-US', {
             weekday: 'long', 
             year: 'numeric', 
