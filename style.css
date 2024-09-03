@@ -28,16 +28,59 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-
-section {
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
+#about img{
+    border: solid;
+    border-radius: 10px;
+    border-color: #fff;
+    margin-top: 20px;
 }
+
+#about {
+    background-color: #1a1e24 ;
+    height: 100vh;
+    text-align: center;
+
+}
+#about h2{
+    text-align: center;
+    margin: 0px;
+    font-size: 39px;
+    letter-spacing: 6px;
+    color: #fff;
+
+}
+#img1{
+    display: block;
+ size: cover;
+
+
+
+}
+#img1 p{
+
+    text-align: center;
+    color: #fff;
+    margin-top: 40%;
+    font-size: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .25em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 3s step-end infinite;
+    }
+    @keyframes typing{
+        from{width: 0}
+        to{width: 100%}
+    }
+
+}
+
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #1a1e24;
-    color: #fff;
+    color: #645a5a;
 }
