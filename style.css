@@ -92,6 +92,16 @@ nav ul li a {
     to { width: 100%; }
 }
 
+.content-wrapper h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: adobe caslon pro;
+   letter-spacing: 3px;
+   font-size: 48px;
+   color: #ffff;
+   text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
 .container {
     width: 100%;
     min-height: 100vh;
@@ -99,7 +109,10 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #c1c1c1, #292929);
+     text-align: center;
 }
+
+
 
 /* Portfolio container adjustments */
 .content-list {
@@ -147,7 +160,7 @@ nav ul li a {
 .content-list .content-number2 .ojtpic2:hover,
 .content-list .content-number3 .ojtpic3:hover {
     transform: translateY(-10px) scale(1.05); /* Move up and slightly scale the image */
-}
+}}
 
 /* Background effect styling */
 .content-list .content-number::before,
@@ -167,15 +180,7 @@ nav ul li a {
     border-radius: 15px; /* Match the border radius */
 }
 
-/* Center text inside .content-number */
-.content-list .content-number p,
-.content-list .content-number h2,
-.content-list .content-number2 p,
-.content-list .content-number2 h2,
-.content-list .content-number3 p,
-.content-list .content-number3 h2 {
-    text-align: center;
-} 
+
 
 #contact {
     width: 100%;
@@ -195,7 +200,22 @@ footer p {
     header p {
         text-align: center;
     }
+    .content-wrapper h1{
+        width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: adobe caslon pro;
+   letter-spacing: 3px;
+   font-size: 25px;
+   color: #ffff;
+}
 
+.content-list{
+    width: 65%;
+    margin-left: 15%;
+
+}
     #about img {
         width: 80%; /* Adjust image size for mobile */
         max-width: 150px; /* Set max width for smaller screens */
