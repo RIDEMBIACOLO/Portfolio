@@ -108,7 +108,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1a1e24;
+    background: linear-gradient(135deg, #c1c1c1, #292929);
      text-align: center;
 }
 
@@ -182,15 +182,111 @@ nav ul li a {
 
 
 
+/* Styling for the contact form container */
 #contact {
-    width: 100%;
+    width: auto;
     min-height: 100vh;
-    background-color: #ffff;
-   font-family: Arial, sans-serif;
-   margin-left: 30px;
-
+    background-color: #1a1e24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
 }
 
+/* Styling for the Contact Me heading */
+#contact h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Styling for the form element */
+#contact form {
+    width: 100%;
+    max-width: 600px; /* Set a max-width for larger screens */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and textarea styling */
+#contact form input,
+#contact form textarea {
+    width: 70%; /* Allow for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1a1e24;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect for inputs and textarea */
+#contact form input:focus,
+#contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid #645a5a;
+}
+
+/* Styling for the textarea */
+#contact form textarea {
+    height: 150px; /* Set a fixed height for the message box */
+    resize: none; /* Disable resizing for consistency */
+}
+
+/* Styling for the send button */
+#contact form button {
+    width: 80%;
+    padding: 15px;
+    background-color: #645a5a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+#contact form button:hover {
+    background-color: #8b8b8b;
+}
+
+/* Responsive styling for the contact form */
+@media (max-width: 768px) {
+    #contact form {
+        justify-content: center;
+        width: 70%;
+        padding: 10px;
+    }
+
+    #contact h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact h1 {
+        font-size: 28px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 14px;
+    }
+
+    #contact form button {
+        font-size: 16px;
+    }
+}
 
 
 footer p {
